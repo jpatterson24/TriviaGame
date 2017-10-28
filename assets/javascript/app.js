@@ -17,7 +17,7 @@ window.onload = function() {
 		var number = 60;
 		var gameTime = intervalId;
 		var question = 0;
-
+    var answer=0;
 		// var questions = [
 		// {question: ["is this true"],
 		//  answer: true},
@@ -54,7 +54,7 @@ start();
  loadQuestions(); 
 // reset();
 //for loop for the array of questions
- 
+ reset();
 function loadQuestions(){
 // 	 $('#myForm input').on('change', function() {
   // var val = $('input[name=question]:checked').val();
@@ -64,16 +64,24 @@ function loadQuestions(){
 	
 
 
+ //  $("#triviaQuestions").html("<h2>" + "Question #1: " + questions[0] + "</h2>");
+ // // $( "input[value]" ).click(function() {
+ // 	$('#myForm input').on('change', function() {
+ //  		var val = ($('input:radio[name=question]:checked').val());
+  		
+ //  		if(val === true){
+ //  			answer++;
+ //  			console.log(answer);
+ //  		} 
+ // $( "input[value]" ).click(function() { 		
   $("#triviaQuestions").html("<h2>" + "Question #1: " + questions[0] + "</h2>");
- // $( "input[value]" ).click(function() {
- 	$('#myForm input').on('change', function() {
-  		var val = ($('input:radio[name=question]:checked').val());
-  		
-  		if(val === true){
-  			answer++;
-  			console.log(answer);
-  		} 
-  		
+  $('#myForm input').on('change', function() {
+     var val = ($('input:radio[name=question]:checked').val());
+      if(val === true){
+        answer++;
+        console.log("#triviaQuestions");
+            }
+}),
 
   $("#triviaQuestionsTwo").html("<h2>" + "Question #2: " + questions[1] + "</h2>");
   	$('#myForm input').on('change', function() {
@@ -83,22 +91,25 @@ function loadQuestions(){
   			answer++;
   			console.log(answer);
   		  		}
+})
+
+
   $("#triviaQuestionsThree").html("<h2>" + "Question #3: " + questions[2] + "</h2>");
   	$('#myForm input').on('change', function() {
   		var val = ($('input:radio[name=question]:checked').val());
-  		
-  		if(val === true){
-  			answer++;
-  			console.log(answer);
+  		  if(val === true){
+    			answer++;
+    			console.log(answer);
   		}
-  		else if(answer === 3){
-  			alert("You Win !!!");
+  		  else if(answer === 3){
+  			 alert("You Win !!!");
   		} else {
-  			alert("You Loose Sorry");
+  		  	alert("You Loose Sorry");
   		}
   	})
-  })
-})
+  }
+}
+ 
 //game reset function
     function reset() {
     //game time interval
@@ -138,7 +149,9 @@ function count(){
 	console.log(currentTime);
 
 }
-}}
+
+
+
 
 
 
