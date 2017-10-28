@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Totally Trival Trivia!</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+<row class="row">
+<div class="page-header col-md-5-center" id="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+</div>
+</row>
+
+	<!-- <row class="row"> -->
+	  <div class="page-header col-md-5-center" id="title">
+	     	<h1>Totally Trivial Trivia!</h1>
+	  </div>
+   <!--  </row> -->
+
+<row class="row">
+	<div class="panel panel-default col-md-5-center">
+		<div class="panel-body" id="timeRemaining">
+			<h2><b>Time Remaining: </b></h2><h2><span id= "timeRemaining"></span></h2>
+			<!-- <div id="display">00:00</div> -->
+		</div>
+</row>
+    
+	<row class="row">
+	<div class="panel panel-default col-md-5-center">
+		<div class="panel-body" id="question">
+			<h3><b>Trivia Question1: </b></h3><span id= "triviaQuestions"></span></h3>
+		</div>
+	
+		<form id="myForm">
+		<div class="form-group ">
+     		<b><input  type="radio" name="question" value="true" id="questionA" ><label>True?</label></b>
+     		<b><input  type="radio" name="question" value="false" id="questionB" ><label>False?</label></b>
+   		</div>
+		</form>
+	</div>
+	</row>
+
+	<row class="row">
+	<div class="panel panel-default col-md-5-center">
+		<div class="panel-body" id="question">
+			<h3><b>Trivia Question2: </b></h3><span id= "triviaQuestions"></span></h3>
+		</div>
+	
+		<form id="myForm">
+		<div class="form-group ">
+     		<b><input  type="radio" name="question" value="true" id="questionTwoA" ><label>True?</label></b>
+     		<b><input  type="radio" name="question" value="false" id="questionTwoB" ><label>False?</label></b>
+   		</div>
+		</form>
+	</div>
+	</row>
+
+	<row class="row">
+	<div class="panel panel-default col-md-5-center">
+		<div class="panel-body" id="question">
+			<h3><b>Trivia Question3: </b></h3><span id= "triviaQuestionsThree"></span></h3>
+		</div>
+	
+		<div class="form-group ">
+     		<b><input  type="radio" name="question" value="true" id="questionThreeA" ><label>True?</label></b>
+     		<b><input  type="radio" name="question" value="false" id="questionThreeB" ><label>False?</label></b>
+		</div>
+	</div>
+	</row>
+
+	<!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>

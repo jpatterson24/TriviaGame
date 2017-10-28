@@ -1,0 +1,59 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;*/
+    text-align: center;
+    background: url("../images/background.jpg");
+    color: rgb(29, 239, 17);
+    color-border: 2px 2px white;
+}
+.panel-default {
+    border-color: #ddd;
+    background-color: transparent;
+    border-color: transparent;
+}
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+    border-color: transparent;
+    position: relative;
+    top: -76px;
+}
+#buttons{
+	color: black;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.panel-body {
+    padding: 15px;
+    position: relative;
+    bottom: 132px;
+}
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+    bottom: 130px;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: white;
+    background-color: #1dee11;
+}
