@@ -56,24 +56,7 @@ start();
 //for loop for the array of questions
  reset();
 function loadQuestions(){
-// 	 $('#myForm input').on('change', function() {
-  // var val = $('input[name=question]:checked').val();
-  // cons
-// })
 
-	
-
-
- //  $("#triviaQuestions").html("<h2>" + "Question #1: " + questions[0] + "</h2>");
- // // $( "input[value]" ).click(function() {
- // 	$('#myForm input').on('change', function() {
- //  		var val = ($('input:radio[name=question]:checked').val());
-  		
- //  		if(val === true){
- //  			answer++;
- //  			console.log(answer);
- //  		} 
- // $( "input[value]" ).click(function() { 		
   $("#triviaQuestions").html("<h2>" + "Question #1: " + questions[0] + "</h2>");
   $('#myForm input').on('change', function() {
      var val = ($('input:radio[name=question]:checked').val());
